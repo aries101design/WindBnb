@@ -1,0 +1,109 @@
+.home{
+    padding: 2% 3%;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.number{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+}
+.main{
+    margin-top: 2%;
+}
+.stays{
+    width: 31%;
+    display: inline-block;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    padding:10px;
+    margin-left: 1%;
+    position: relative;
+}
+.stays:hover{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.18);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.image__wrapper{
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+.host{
+    z-index: 2;
+    position: absolute;
+    top: 4%;
+    color: white;
+    right: 4%;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding:2px 7px;
+    animation: glow 1s ease-in-out alternate infinite;
+}
+@keyframes glow {
+    from {
+        box-shadow: 0px 0px 0px rgba(255,255,255,0.8);
+    }
+    to{
+        box-shadow: 0px 0px 8px rgba(255,255,255,0.8);
+    }
+}
+.stays__image{
+    width:100%;
+    object-fit: cover;
+    border-radius: 20px;
+    height: 35vh !important;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+span{
+    display: flex;
+    justify-content: space-around;
+}
+span > p{
+    margin-left: 10px;
+    color:#828282;
+}
+.basic{
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    padding-left: 9px;
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+@media screen and (max-width:768px){
+    .home{
+        padding: 2% 1%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .stays{
+        width: 100%;
+        display: inline-block;
+        margin-right: 1%;
+        margin-bottom: 5%;
+        padding:10px;
+        margin-left: 1%;
+        position: relative;
+    }
+}
